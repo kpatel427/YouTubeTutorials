@@ -6,7 +6,7 @@ library(dplyr)
 library(tidyverse)
 library(GEOquery)
 
-# 1. read in data --------------------
+# 1. Read in data --------------------
 dat <- read.csv('../data/GSE183947_fpkm.csv')
 
 # 2. Fetch metadata ----------
@@ -23,7 +23,7 @@ gse[[1]]
 metadata <- pData(phenoData(gse[[1]]))
 
 
-# 3. subset ------------------
+# 3. subset, rename and mutate ------------------
 metadata <- metadata %>%
   select(1,2,10,11,17) %>% # select() columns
   rename(tissue=characteristics_ch1) %>% # rename() columns
@@ -61,20 +61,8 @@ dat.long.metadata %>%
             q3 = quantile(FPKM, 0.75))
 
 
-# checking expression for housekeeping gene 
-# A housekeeping gene ideally should be stable, expressed in the cells and tissues of interest 
-# that do not show changes under the experimental conditions or disease state.
-dat.long.metadata %>%
-  filter(gene == 'GAPDH') %>%
-  group_by(gene, tissue) %>%
-  summarize(mean = mean(FPKM),
-            median = median(FPKM),
-            q1 = quantile(FPKM, 0.25),
-            q2 = quantile(FPKM, 0.5),
-            q3 = quantile(FPKM, 0.75))
 
-
-# 7. find top 10 genes with highest -----------------
+# 7. Find top 10 genes with highest and lowest expression -----------------
 dat.long.metadata %>%
   filter(gene > 0) %>%
   group_by(gene) %>%
