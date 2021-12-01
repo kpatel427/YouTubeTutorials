@@ -1,79 +1,56 @@
-# script to manipulate data
+# script to manipulate gene expression data (GSE183947)
 # setwd("~/Desktop/demo/data_manipulation_R/scripts")
 
-#load libraries
+# load libraries
 library(dplyr)
 library(tidyverse)
 library(GEOquery)
 
-# 1. Read in data --------------------
-dat <- read.csv('../data/GSE183947_fpkm.csv')
+# read in the data ---------
+dat <- read.csv(file = "../data/GSE183947_fpkm.csv")
+dim(dat)
 
-# 2. Fetch metadata ----------
-geo_id <- "GSE183947"
-
-#gse <- getGEO(geo_id,GSEMatrix=TRUE)
+# get metadata --------
+gse <- getGEO(GEO = 'GSE183947', GSEMatrix = TRUE)
 # Error: The size of the connection buffer (131072) was not large enough                                          0s
 # to fit a complete line:
 #   * Increase it by setting `Sys.setenv("VROOM_CONNECTION_SIZE")`
-Sys.setenv("VROOM_CONNECTION_SIZE" = 131072*1000)
-gse <- getGEO(geo_id,GSEMatrix=TRUE)
-gse[[1]]
+Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 1000)
+
+gse
 
 metadata <- pData(phenoData(gse[[1]]))
+head(metadata)
+
+# select, mutate, rename ------------
+metadata.modified <- metadata %>%
+  select(1,10,11,17) %>%
+  rename(tissue = characteristics_ch1) %>%
+  rename(metastasis = characteristics_ch1.1) %>%
+  mutate(tissue = gsub("tissue: ", "", tissue)) %>%
+  mutate(metastasis = gsub("metastasis: ", "", metastasis))
 
 
-# 3. subset, rename and mutate ------------------
-metadata <- metadata %>%
-  select(1,2,10,11,17) %>% # select() columns
-  rename(tissue=characteristics_ch1) %>% # rename() columns
-  rename(metastasis=characteristics_ch1.1) %>%
-  mutate(tissue = gsub('tissue:', '', tissue), # mutate() to change values in a column/create new variables
-         metastasis = gsub('metastasis:', '', metastasis))
+# looking at gene expression data ---------
+head(dat)
 
-
-# 4. reshape ---------------
-# wide format
-dat[1:10,1:10]
-
-# long
+# reshaping data - from wide to long--------
 dat.long <- dat %>%
-  rename(gene=X) %>%
-  gather(key = 'samples', value = 'FPKM', -gene) # to convert wide format to long = facilitates to add more data to the dataframe
-
-head(dat.long)
+  rename(gene = X) %>%
+  gather(key = 'samples', value = 'FPKM', -gene)
 
 
-# 5. merge -------------
-dat.long.metadata <- dat.long %>%
-  left_join(., metadata, by = c("samples" = "description"))
+# join dataframes = dat.long + metadata.modified
 
-# 6. Explore data -------------
-# summary FPKM statistics for samples from breast tumor and normal tissues
+dat.long <- dat.long %>%
+  left_join(., metadata.modified, by = c("samples" = "description")) 
 
-dat.long.metadata %>%
+# explore data ------
+# filter, group_by, summarize and arrange 
+dat.long %>%
   filter(gene == 'BRCA1' | gene == 'BRCA2') %>%
   group_by(gene, tissue) %>%
-  summarize(mean = mean(FPKM),
-            median = median(FPKM),
-            q1 = quantile(FPKM, 0.25),
-            q2 = quantile(FPKM, 0.5),
-            q3 = quantile(FPKM, 0.75))
-
-
-
-# 7. Find top 10 genes with highest and lowest expression -----------------
-dat.long.metadata %>%
-  filter(gene > 0) %>%
-  group_by(gene) %>%
-  mutate(mean_FPKM = round(mean(FPKM),2)) %>%
-  select(gene, mean_FPKM) %>%
-  distinct() %>%
-  arrange(as.integer(-mean_FPKM)) %>%
-  top_n(10)
-
-
-
-
-
+  summarize(mean_FPKM = mean(FPKM),
+            median_FPKM = median(FPKM)) %>%
+  arrange(-mean_FPKM)
 
