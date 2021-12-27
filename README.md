@@ -5,5 +5,5 @@ This repository holds scripts for demo tutorials on my youtube [channel](https:/
 
 | Script | Youtube Video |
 | --- | --- |
-| [dataManipulation.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/dataManipulation.R) | How to manipulate gene expression data from NCBI GEO in R using dplyr |
-| placeholder | placeholder |
+| [dataManipulation.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/dataManipulation.R) | Manipulate gene expression data from NCBI GEO in R using dplyr |
+| [visualize_ggplot2.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/visualize_ggplot2.R) | Visualize gene expression data in R using ggplot2 |
