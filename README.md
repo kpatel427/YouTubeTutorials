@@ -7,3 +7,4 @@ This repository holds scripts for demo tutorials on my youtube [channel](https:/
 | --- | --- |
 | [dataManipulation.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/dataManipulation.R) | How to manipulate gene expression data from NCBI GEO in R using dplyr | Bioinformatics for beginners |
 | [visualize_ggplot2.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/visualize_ggplot2.R) | Visualize gene expression data in R using ggplot2 |
+| [dataformats.R]() | Reading single-cell data in R: H5AD, loom, MEX, AnnData formats |
