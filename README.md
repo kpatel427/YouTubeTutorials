@@ -10,3 +10,4 @@ This repository holds scripts for demo tutorials on my youtube [channel](https:/
 | [dataformats.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/dataformats.R) | [Reading single-cell data in R: H5AD, loom, MEX, AnnData formats](https://youtu.be/3xcTpqQzUwQ) |
 | [singleCell_standard_workflow.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/singleCell_standard_workflow.R) | [How to analyze single-cell RNA-Seq data in R](https://www.youtube.com/watch?v=5HBzgsz8qyk) |
 | [runDESeq2.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/runDESeq2.R) , [getData.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/getData.R) | [DESeq2 workflow tutorial](https://youtu.be/OzNzO8qwwp0) |
+| [singleCell_integration.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/singleCell_integration.R) | [Integrate single-cell RNA-Seq datasets in R using Seurat (CCA)](https://youtu.be/HrbeaEJqKcY) |
