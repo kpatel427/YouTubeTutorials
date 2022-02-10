@@ -45,15 +45,15 @@ pbmc.seurat.filtered <- RunUMAP(object = pbmc.seurat.filtered, dims = 1:20)
 
 
 ## pK Identification (no ground-truth) ---------------------------------------------------------------------------------------
-sweep.res.list_nsclc <- paramSweep_v3(pbmc.seurat.filtered, PCs = 1:20, sct = FALSE)
-sweep.stats_nsclc <- summarizeSweep(sweep.res.list_nsclc, GT = FALSE)
-bcmvn_nsclc <- find.pK(sweep.stats_nsclc)
+sweep.res.list_pbmc <- paramSweep_v3(pbmc.seurat.filtered, PCs = 1:20, sct = FALSE)
+sweep.stats_pbmc <- summarizeSweep(sweep.res.list_pbmc, GT = FALSE)
+bcmvn_pbmc <- find.pK(sweep.stats_pbmc)
 
-ggplot(bcmvn_nsclc, aes(pK, BCmetric, group = 1)) +
+ggplot(bcmvn_pbmc, aes(pK, BCmetric, group = 1)) +
   geom_point() +
   geom_line()
 
-pK <- bcmvn_nsclc %>% # select the pK that corresponds to max bcmvn to optimize doublet detection
+pK <- bcmvn_pbmc %>% # select the pK that corresponds to max bcmvn to optimize doublet detection
   filter(BCmetric == max(BCmetric)) %>%
   select(pK) 
 pK <- as.numeric(as.character(pK[[1]]))
@@ -81,10 +81,5 @@ DimPlot(pbmc.seurat.filtered, reduction = 'umap', group.by = "DF.classifications
 
 # number of singlets and doublets
 table(pbmc.seurat.filtered@meta.data$DF.classifications_0.25_0.21_691)
-
-
-
-
-
 
 
