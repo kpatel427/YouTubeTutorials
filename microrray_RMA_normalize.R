@@ -32,8 +32,3 @@ normalized.expr <- normalized.expr %>%
   rownames_to_column(var = 'ID') %>%
   inner_join(., feature.data, by = 'ID')
 
-
-
-
-
-
