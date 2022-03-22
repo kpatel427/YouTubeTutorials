@@ -1,7 +1,7 @@
 # script to identify cluster identity -----------------
 # Finding markers in every cluster
-# finding conserved markers 
-# finding markers DE between conditions
+# Finding conserved markers 
+# Finding markers DE between conditions
 
 # setwd("~/Desktop/demo/single_cell_DEG/script")
 
