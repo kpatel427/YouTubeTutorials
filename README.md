@@ -14,4 +14,4 @@ This repository holds scripts for demo tutorials on my youtube [channel](https:/
 | [singleCell_doublets.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/singleCell_doublets.R)  |  [DoubletFinder: Detect doublets in single-cell RNA-Seq data in R](https://youtu.be/NqvAS4HgmrE) |
 | [microrray_RMA_normalize.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/microrray_RMA_normalize.R) | [How to read and normalize microarray data in R - RMA normalization](https://youtu.be/TtlvC67pdOM)|
 | [singleCell_integrate_harmony.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/singleCell_integrate_harmony.R) | [Integrate single-cell RNA-Seq data in R using Harmony](https://youtu.be/zEuqhiu341I) |
-| [singleCell_CI_markers.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/singleCell_CI_markers.R) | [Find Markers and Cluster Identification using Seurat](https://youtu.be/1i6T9hpvwg0) |
+| [singleCell_CI_markers.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/singleCell_CI_markers.R) | [Find markers and cluster identification in single-cell RNA-Seq using Seurat](https://youtu.be/1i6T9hpvwg0) |
