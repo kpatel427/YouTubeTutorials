@@ -1,4 +1,4 @@
-# script to perform pseudo-bulk DEG
+# script to perform pseudo-bulk DGA
 # setwd("~/Desktop/demo/single_cell_DEG")
 
 library(ExperimentHub)
