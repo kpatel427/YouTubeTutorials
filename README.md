@@ -17,3 +17,4 @@ This repository holds scripts for demo tutorials on my youtube [channel](https:/
 | [singleCell_CI_markers.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/singleCell_CI_markers.R) | [Find markers and cluster identification in single-cell RNA-Seq using Seurat](https://youtu.be/1i6T9hpvwg0) |
 | [singleCell_pseudoBulk.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/singleCell_pseudoBulk.R) | [Pseudo-bulk analysis for single-cell RNA-Seq data](https://youtu.be/04gB2owLKus) |
 | [convert_geneID_geneSymbols.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/convert_geneID_geneSymbols.R) | [3 ways to convert Ensembl IDs to gene symbols](https://youtu.be/cWe359VnfaY) |
+| [RNASeqpipeline.sh](https://github.com/kpatel427/YouTubeTutorials/blob/main/RNASeqpipeline.sh) | [Setup RNA-Seq Pipeline from scratch: fastq (reads) to counts](https://youtu.be/lG11JjovJHE)|
