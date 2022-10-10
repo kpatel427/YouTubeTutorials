@@ -20,4 +20,4 @@ This repository holds scripts for demo tutorials on my youtube [channel](https:/
 | [RNASeqpipeline.sh](https://github.com/kpatel427/YouTubeTutorials/blob/main/RNASeqpipeline.sh) | [Setup RNA-Seq Pipeline from scratch: fastq (reads) to counts](https://youtu.be/lG11JjovJHE)|
 | [TI_monocle3.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/TI_monocle3.R) | [Single-cell Trajectory analysis using Monocle3 and Seurat](https://youtu.be/iq4T_uzMFcY) |
 | [WGCNA.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/WGCNA.R) | [Weighted Gene Co-expression Network Analysis (WGCNA) Step-by-step Tutorial - Part 1](https://youtu.be/gYE59uEMXT4) & [Weighted Gene Co-expression Network Analysis (WGCNA) Step-by-step Tutorial - Part 2](https://youtu.be/mzXIxjPr_Mc) |
-| [variant_calling.sh]() | []() |
+| [variant_calling.sh](https://github.com/kpatel427/YouTubeTutorials/blob/main/variant_calling.sh) | []() |
