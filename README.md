@@ -22,3 +22,4 @@ This repository holds scripts for demo tutorials on my youtube [channel](https:/
 | [WGCNA.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/WGCNA.R) | [Weighted Gene Co-expression Network Analysis (WGCNA) Step-by-step Tutorial - Part 1](https://youtu.be/gYE59uEMXT4) & [Weighted Gene Co-expression Network Analysis (WGCNA) Step-by-step Tutorial - Part 2](https://youtu.be/mzXIxjPr_Mc) |
 | [variant_calling.sh](https://github.com/kpatel427/YouTubeTutorials/blob/main/variant_calling.sh) | [Variant calling with GATK - Detailed NGS Analysis Workflow](https://youtu.be/iHkiQvxyr5c) |
 | [DESeq2ErrorFix.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/DESeq2ErrorFix.R) | [DESeq2 Error Fix: DESeqDataSetFromMatrix ncol(countData) == nrow(colData) is not TRUE)]() |
+| [variant_filtering_annotation.sh](https://github.com/kpatel427/YouTubeTutorials/blob/main/variant_filtering_annotation.sh) | [WGS Variant Calling: Variant Filtering and Annotation - Part 2]() |
