@@ -21,6 +21,6 @@ This repository holds scripts for demo tutorials on my youtube [channel](https:/
 | [TI_monocle3.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/TI_monocle3.R) | [Single-cell Trajectory analysis using Monocle3 and Seurat](https://youtu.be/iq4T_uzMFcY) |
 | [WGCNA.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/WGCNA.R) | [Weighted Gene Co-expression Network Analysis (WGCNA) Step-by-step Tutorial - Part 1](https://youtu.be/gYE59uEMXT4) & [Weighted Gene Co-expression Network Analysis (WGCNA) Step-by-step Tutorial - Part 2](https://youtu.be/mzXIxjPr_Mc) |
 | [variant_calling.sh](https://github.com/kpatel427/YouTubeTutorials/blob/main/variant_calling.sh) | [WGS Variant Calling: Variant calling with GATK - Part 1](https://youtu.be/iHkiQvxyr5c) |
-| [DESeq2ErrorFix.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/DESeq2ErrorFix.R) | [DESeq2 Error Fix: DESeqDataSetFromMatrix ncol(countData) == nrow(colData) is not TRUE)]() |
-| [variant_filtering_annotation.sh](https://github.com/kpatel427/YouTubeTutorials/blob/main/variant_filtering_annotation.sh) | [WGS Variant Calling: Variant Filtering and Annotation - Part 2]() |
+| [DESeq2ErrorFix.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/DESeq2ErrorFix.R) | [DESeq2 Error Fix: DESeqDataSetFromMatrix ncol(countData) == nrow(colData) is not TRUE)](https://youtu.be/nks7ibkBud8) |
+| [variant_filtering_annotation.sh](https://github.com/kpatel427/YouTubeTutorials/blob/main/variant_filtering_annotation.sh) | [WGS Variant Calling: Variant Filtering and Annotation - Part 2](https://youtu.be/XZ8scaScfjw) |
 | [installPackages.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/installPackages.R) | [How to install packages in R? What is CRAN? What is Bioconductor?]() |
