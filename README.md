@@ -27,4 +27,4 @@ This repository holds scripts for demo tutorials on my youtube [channel](https:/
 | [tcga_data_download.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/tcga_data_download.R) | [Download data from GDC Portal using TCGAbiolinks R Package](https://youtu.be/UWXv9dUpxNE) |
 | [KM_survival.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/KM_survival.R) | [Survival analysis with TCGA data in R - Create Kaplan-Meier Curves](https://youtu.be/DnygUTAZFmM) |
 | [annotateSingleR.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/annotateSingleR.R) |[Automatic cell-annotation for single-cell RNA-Seq data: A detailed SingleR tutorial (PART 1)](https://youtu.be/7RuPGaWcY0Y) |
-| [annotateSingleR_multipleRefs.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/annotateSingleR_multipleRefs.R) |[Automatic cell-annotation for single-cell RNA-Seq data: A detailed SingleR tutorial (PART 2)]() |
+| [annotateSingleR_multipleRefs.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/annotateSingleR_multipleRefs.R) |[Automatic cell-annotation for single-cell RNA-Seq data: A detailed SingleR tutorial (PART 2)](https://youtu.be/cZsF0DfeMGg) |
