@@ -28,4 +28,4 @@ This repository holds scripts for demo tutorials on my youtube [channel](https:/
 | [KM_survival.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/KM_survival.R) | [Survival analysis with TCGA data in R - Create Kaplan-Meier Curves](https://youtu.be/DnygUTAZFmM) |
 | [annotateSingleR.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/annotateSingleR.R) |[Automatic cell-annotation for single-cell RNA-Seq data: A detailed SingleR tutorial (PART 1)](https://youtu.be/7RuPGaWcY0Y) |
 | [annotateSingleR_multipleRefs.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/annotateSingleR_multipleRefs.R) |[Automatic cell-annotation for single-cell RNA-Seq data: A detailed SingleR tutorial (PART 2)](https://youtu.be/cZsF0DfeMGg) |
-| [setSeed.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/setSeed.R) | []() |
+| [setSeed.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/setSeed.R) | [Understanding set.seed in R: Ensuring Reproducibility in Data Analysis](https://youtu.be/M5Yggz3AV1g) |
