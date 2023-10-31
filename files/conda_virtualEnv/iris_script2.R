@@ -1,3 +1,8 @@
+library(renv)
+renv::activate()
+
+# Restore the project environment
+renv::restore()
 
 .libPaths()
 # [1] "/Users/kr/Desktop/demo/conda_renv/test2/renv/library/R-4.1/x86_64-apple-darwin17.0"            
