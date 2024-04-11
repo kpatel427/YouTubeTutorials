@@ -30,4 +30,4 @@ This repository holds scripts for demo tutorials on my youtube [channel](https:/
 | [annotateSingleR_multipleRefs.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/annotateSingleR_multipleRefs.R) |[Automatic cell-annotation for single-cell RNA-Seq data: A detailed SingleR tutorial (PART 2)](https://youtu.be/cZsF0DfeMGg) |
 | [setSeed.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/setSeed.R) | [Understanding set.seed in R: Ensuring Reproducibility in Data Analysis](https://youtu.be/M5Yggz3AV1g) |
 | [conda and renv scripts](https://github.com/kpatel427/YouTubeTutorials/tree/main/files/conda_virtualEnv) | [Demystifying Conda (Anaconda, Miniconda and Bioconda) and Virtual Environments](https://youtu.be/2bXGm0ZnJ38) |
-| [scATACSeq_standard_workflow.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/scATACSeq_standard_workflow.R) | [placeholder]() |
+| [scATACSeq_standard_workflow.R](https://github.com/kpatel427/YouTubeTutorials/blob/main/scATACSeq_standard_workflow.R) | [How to analyze single-cell ATAC-Seq data in R; Detailed Signac Workflow Tutorial](https://youtu.be/yEKZJVjc5DY) |
